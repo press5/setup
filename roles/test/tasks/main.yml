@@ -1,0 +1,3 @@
+---
+ - name: yes hello
+   shell: echo "yes hello" >> /tmp/jkl
