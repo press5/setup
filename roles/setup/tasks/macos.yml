@@ -1,0 +1,86 @@
+---
+- name: check if homebrew is already installed
+  stat:
+    path: /usr/local/bin/brew
+  register: hb
+
+- name: install homebrew if not exists
+  script: install-homebrew.sh
+  when: not hb.stat.exists
+
+- homebrew:
+    name: "{{ item }}"
+    state: latest
+    update_homebrew: yes
+  with_items:
+    - bat
+    - prettyping
+    - zsh
+    - jq
+    - gpg
+    - httpie
+    - ipmitool
+    - git
+    - htop
+    - diff-so-fancy
+    - vim 
+    - fd
+    - fzf
+    - ncdu
+    - python3
+    - screenfetch
+    - mtr
+    - keychain
+    - ack
+    - lnav
+    - kubernetes-cli
+    - yq
+    - wget
+    - kubernetes-helm
+    - miller
+    - ipcalc
+    - zsh
+    - zsh-completions
+    - jsonlint
+    - telnet
+    - tmux
+    - expect
+    - ansible-lint
+    - rakudo-star
+    - libusb
+    - ctags
+    - molecule
+    - flake8
+  tags:
+    - homebrew
+
+- homebrew_cask:
+   name: "{{ item }}"
+   state: present
+   update_homebrew: yes
+   upgrade_all: true
+  with_items:
+    - keepingyouawake
+    - macdown
+  tags:
+    - homebrew
+
+- homebrew_tap:
+   name: "{{ item }}"
+   state: present
+   update_homebrew: yes
+   upgrade_all: true
+  with_items:
+    - zaquestion/tap/lab
+  tags:
+    - homebrew
+
+- name: mac dotfile setup
+  template: 
+    src: "dotfiles/macos/{{ item }}"
+    dest: "/Users/jkl/.{{ item }}"
+  with items:
+    - zshrc
+  tags: 
+    - dots-mac
+
