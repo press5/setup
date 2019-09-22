@@ -18,8 +18,6 @@ fi
 
 
 # TODO: linux 
-if uname -s | grep -q Linux; then
- # stuff
-fi 
+
 
 
