@@ -1,4 +1,5 @@
 ---
  - hosts: workstation
+   gather_facts: yes
    roles:
-     - setup
+     - jkl_provision

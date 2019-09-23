@@ -1,0 +1,4 @@
+---
+ - name: set up a MacOS system
+   include_tasks: macos.yml
+   tags: macos

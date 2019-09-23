@@ -1,0 +1,74 @@
+---
+gen:
+  myhome: "{{ lookup('env','HOME') }}"
+  
+brew_pkgs:
+  - ack
+  - ansible-lint
+  - bat
+  - ctags
+  - diff-so-fancy
+  - expect
+  - fd
+  - flake8
+  - fzf
+  - git
+  - gpg
+  - htop
+  - httpie
+  - ipcalc
+  - ipmitool
+  - jq
+  - jsonlint
+  - keychain
+  - kubernetes-cli
+  - kubernetes-helm
+  - libusb
+  - lnav
+  - miller
+  - molecule
+  - mtr
+  - ncdu
+  - prettyping
+  - python3
+  - rakudo-star
+  - screenfetch
+  - telnet
+  - tmux
+  - vim
+  - wget
+  - yq
+  - zsh
+  - zsh-completions
+
+brew_casks: 
+#  - 1password 
+#  - alfred
+#  - docker
+#  - iterm2
+#  - keepingyouawake
+  - macdown
+#  - slack
+#  - spotify
+
+download_these:
+   trackballworks:
+     name: Kensington Trackball Works
+     url: https://www.kensington.com/siteassets/software-support/trackballworks-1.5.0.dmg
+     dest: "{{gen.myhome}}/Downloads/trackballworks.dmg"
+
+aliases:
+  k: 'kubectl'
+  kcset: "kubectl config use-context $1"
+  kcunset: "kubectl config unset current-context"
+  kcshow: "kubectl config get-contexts"
+  ssh: "/usr/bin/ssh -A"
+  drc: 'docker-compose'
+  
+env:
+  PKG_CONFIG_PATH: "/usr/local/Cellar/libvirt/4.5.0/lib/pkgconfig"
+  
+
+
+# fabulous: 'yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;    ${i}m\n"; sleep .02; done'
+
