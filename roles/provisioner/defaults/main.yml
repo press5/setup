@@ -29,6 +29,7 @@ brew_pkgs:
   - molecule
   - mtr
   - ncdu
+  - neovim
   - prettyping
   - python3
   - rakudo-star
