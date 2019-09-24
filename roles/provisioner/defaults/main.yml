@@ -52,8 +52,7 @@ brew_casks:
 #  - slack
 #  - spotify
 
-brew_taps: 
-   - zaquestion/tap/lab
+brew_taps: []
    
 download_these:
    trackballworks:
