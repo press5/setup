@@ -51,6 +51,7 @@ brew_casks:
   - dwarf-fortress
   - github
   - hammerspoon
+  - helium
   - iterm2
   - itsycal
   - karabiner-elements
