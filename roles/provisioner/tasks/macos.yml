@@ -27,6 +27,12 @@
     name: "{{ brew_casks }}"
     state: present
 
+- name: install homebrew taps (this may take some time)
+  tags: brew
+  homebrew_tap:
+    name: "{{ brew_taps }}"
+    state: present
+
 - name: getting things that can't be installed via brew
   tags: downloads
   get_url:

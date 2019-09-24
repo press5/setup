@@ -52,6 +52,9 @@ brew_casks:
 #  - slack
 #  - spotify
 
+brew_taps: 
+   - zaquestion/tap/lab
+   
 download_these:
    trackballworks:
      name: Kensington Trackball Works
