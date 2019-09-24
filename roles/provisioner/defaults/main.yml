@@ -52,13 +52,16 @@ brew_casks:
   - github
   - hammerspoon
   - helium
+  - insomnia
   - iterm2
   - itsycal
   - karabiner-elements
   - keepingyouawake
+  - keybase
   - kiwi-for-g-suite
   - macdown
   - monitorcontrol
+  - muzzle
   - slack
   - spotify
   - visual-studio-code
