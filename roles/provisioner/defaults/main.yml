@@ -43,14 +43,28 @@ brew_pkgs:
   - zsh-completions
 
 brew_casks: 
-#  - 1password 
-#  - alfred
-#  - docker
-#  - iterm2
-#  - keepingyouawake
+  - 1password 
+  - alfred
+  - bettertouchtool
+  - cathode
+  - docker
+  - dwarf-fortress
+  - github
+  - hammerspoon
+  - iterm2
+  - itsycal
+  - karabiner-elements
+  - keepingyouawake
+  - kiwi-for-g-suite
   - macdown
-#  - slack
-#  - spotify
+  - monitorcontrol
+  - slack
+  - spotify
+  - visual-studio-code
+  - vlc
+  - vmware-remote-console
+  - wireshark
+  - zoomus
 
 brew_taps: []
    
