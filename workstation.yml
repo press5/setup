@@ -10,9 +10,6 @@
 # 'defaults' - set some macOS defaults 
 
 
-
-
-
  - hosts: workstation
    gather_facts: yes
    roles:
