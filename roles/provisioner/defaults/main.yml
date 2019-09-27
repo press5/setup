@@ -83,6 +83,7 @@ download_these:
      name: Airfoil Satellite
      url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
      dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
+
 aliases:
   k: 'kubectl'
   kcset: "kubectl config use-context $1"
