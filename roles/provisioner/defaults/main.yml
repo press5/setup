@@ -25,7 +25,7 @@ brew_pkgs:
   - kubernetes-helm
   - libusb
   - lnav
-  - mas               # this is a dependency
+  - mas  # this is a dependency, be sure to keep it
   - miller
   - molecule
   - mtr
