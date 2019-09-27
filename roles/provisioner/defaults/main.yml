@@ -79,7 +79,10 @@ download_these:
      name: Kensington Trackball Works
      url: https://www.kensington.com/siteassets/software-support/trackballworks-1.5.0.dmg
      dest: "{{gen.myhome}}/Downloads/trackballworks.dmg"
-
+   airfoilsatellite:
+     name: Airfoil Satellite
+     url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
+     dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
 aliases:
   k: 'kubectl'
   kcset: "kubectl config use-context $1"
