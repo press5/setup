@@ -6,6 +6,7 @@
 
 # os detection of a sort
 if uname -s | grep -q Darwin; then
+  read -p "=== ensure you're logged in to the app store, then press enter ==="
   /usr/bin/xcode-select --install   # install xcode 
   read -p "=== press enter when your xcode install is done ==="
   if ! [ -x "$(command -v brew)" ]; then
