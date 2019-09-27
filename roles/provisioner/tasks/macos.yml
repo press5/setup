@@ -27,6 +27,7 @@
     name: "{{ brew_casks }}"
     state: present
 
+# obviously uncomment this if you have taps. i don't yet.
 #- name: install homebrew taps (this may take some time)
 #  tags: brew
 #  homebrew_tap:
