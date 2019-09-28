@@ -83,6 +83,10 @@ download_these:
      name: Airfoil Satellite
      url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
      dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
+   itsycal:
+     name: Itsycal
+     url: https://itsycal.s3.amazonaws.com/Itsycal.zip
+     dest: "{{gen.myhome}}/Downloads/Itsycal.zip"
 
 aliases:
   k: 'kubectl'
