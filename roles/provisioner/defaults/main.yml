@@ -31,6 +31,7 @@ brew_pkgs:
   - mtr
   - ncdu
   - neovim
+  - nmap
   - prettyping
   - python3
   - rakudo-star
@@ -63,7 +64,6 @@ brew_casks:
   - macdown
   - monitorcontrol
   - muzzle
-  - nmap
   - slack
   - spotify
   - visual-studio-code
