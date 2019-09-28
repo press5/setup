@@ -47,7 +47,7 @@ brew_pkgs:
 brew_casks: 
   - 1password 
   - alfred
-  - bettertouchtool
+  - bettertouchtool  # TODO: only install on touch bar macs 
   - cathode
   - docker
   - dwarf-fortress
@@ -60,7 +60,7 @@ brew_casks:
   - karabiner-elements
   - keepingyouawake
   - keybase
-# - kiwi-for-g-suite  # this download is broken?
+# - kiwi-for-g-suite  # this download is broken?  FIXME
   - macdown
   - monitorcontrol
   - muzzle
@@ -83,10 +83,6 @@ download_these:
      name: Airfoil Satellite
      url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
      dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
-   itsycal:
-     name: Itsycal
-     url: https://itsycal.s3.amazonaws.com/Itsycal.zip
-     dest: "{{gen.myhome}}/Downloads/Itsycal.zip"
 
 aliases:
   k: 'kubectl'
