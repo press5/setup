@@ -83,6 +83,10 @@ download_these:
      name: Airfoil Satellite
      url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
      dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
+   discord:
+     name: Discord
+     url: https://discordapp.com/api/download?platform=osx
+     dest: "{{gen.myhome}}/Downloads/Discord.dmg"
 
 aliases:
   k: 'kubectl'
