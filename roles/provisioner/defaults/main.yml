@@ -60,7 +60,7 @@ brew_casks:
   - karabiner-elements
   - keepingyouawake
   - keybase
-  - kiwi-for-g-suite
+# - kiwi-for-g-suite  # this download is broken?
   - macdown
   - monitorcontrol
   - muzzle
