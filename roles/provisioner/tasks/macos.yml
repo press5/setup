@@ -41,6 +41,16 @@
     dest: "{{ item.value.dest }}" 
   with_dict: "{{ download_these }}"
 
+- name: install appstore apps
+  shell: "mas install {{item.value.aid}}"
+  with_dict: "{{ appstore_apps }}" 
+  tags: appstore
+
 - name: set up some MacOS defaults
   include_tasks: macos_defaults.yml
   tags: defaults
+
+- name: set up homedir repo for dotfiles
+  include_tasks: dotfiles.yml
+  tags: dotfiles
+

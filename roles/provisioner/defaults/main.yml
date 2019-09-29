@@ -72,6 +72,11 @@ brew_casks:
   - zoomus
 
 brew_taps: []
+
+appstore_apps:
+   helium:
+     name: Helium
+     aid: 1054607607
    
 download_these:
    trackballworks:
