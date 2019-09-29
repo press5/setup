@@ -46,6 +46,12 @@
   with_dict: "{{ appstore_apps }}" 
   tags: appstore
 
+- name: grab superduper mode 
+  git:
+    repo: https://github.com/jasonrudolph/keyboard.git
+    dest: "{{gen.myhome}}/.keyboard"
+  tags: superduper
+
 - name: set up some MacOS defaults
   include_tasks: macos_defaults.yml
   tags: defaults
