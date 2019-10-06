@@ -1,34 +1,38 @@
 ---
-- name: System: Disable Smart Quotes 
+- name: System - Disable Smart Quotes
   tags: defaults
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
+    type: string
     value: 0
     state: present
 
-- name: System: Disable Smart Dashes
+- name: System - Disable Smart Dashes
   tags: defaults
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled
-    value: 0
+    type: bool
+    value: false
     state: present
 
-- name: System: Disable Auto Capitalization
+- name: System - Disable Auto Capitalization
   tags: defaults
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticCapitalizationEnabled
-    value: 0
+    type: bool
+    value: false
     state: present
 
-- name: System: Disable Automatic Periods
+- name: System - Disable Automatic Periods
   tags: defaults
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticPeriodSubstitutionEnabled
-    value: 0
+    type: bool
+    value: false
     state: present
 
 - name: Desktop Services - don't write .DS_Store files on removable drives
@@ -103,6 +107,25 @@
     value: true
     state: present
 
+
+- name: Dock - set tilesize
+  tags: defaults
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 36
+    state: present
+
+- name: Dock - animation set to scale
+  tags: defaults
+  osx_defaults:
+    domain: com.apple.dock
+    key: mineffect
+    type: string
+    value: "scale"
+    state: present
+
 - name: Dock - Don't show recent applications
   tags: defaults
   osx_defaults:
@@ -110,6 +133,15 @@
     key: show-recents
     type: bool
     value: false
+    state: present
+
+- name: Dock - hide immediately
+  tags: defaults
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide-delay
+    type: float
+    value: 0
     state: present
 
 - name: Trackpad - Disable natural scrolling
@@ -120,4 +152,3 @@
     type: bool
     value: false
     state: present
-

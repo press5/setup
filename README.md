@@ -1,10 +1,18 @@
 # setup
-WIP: my system setup
+WIP: my system setup (documentation in progress)
 ### warning: my setup is opinionated (as it should be)
 
 
 ## macos
+on a new system you can run all these tags together:
 
+`brew` installs homebrew formula/kegs/taps
+
+`downloads` grabs whatever you need from the web
+
+`appstore` will install appstore apps
+
+`superduper` will set up [jasonrudolph/keyboard](https://github.com/jasonrudolph/keyboard)
 
 tag `defaults` will make the following changes: 
 
@@ -27,11 +35,15 @@ dock:
 
 *  enable auto-hide
 *  don't show recent applications 
+*  set size to 32px 
+*  change window animation to scale
 *  
 
 ## special thanks
 A lot of source material was used when putting this together. 
 
 [https://github.com/joeyhoer/starter/](https://github.com/joeyhoer/starter/) 
+
+[https://github.com/mathiasbynens/dotfiles/blob/master/.macos](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
 
 [https://ss64.com/osx/syntax-defaults.html](https://ss64.com/osx/syntax-defaults.html)
