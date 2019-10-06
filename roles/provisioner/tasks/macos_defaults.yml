@@ -115,8 +115,8 @@
 - name: Trackpad - Disable natural scrolling
   tags: defaults
   osx_defaults:
-    domain: NSGlobalDomain 
-    key: com.apple.swipescrolldirection 
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
     type: bool
     value: false
     state: present
