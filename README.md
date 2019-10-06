@@ -1,5 +1,8 @@
 # setup
 WIP: my system setup (documentation in progress)
+
+i wanted something that i could use on a new system to set it up the way i want while staying as simple as possible.
+
 ### warning: my setup is opinionated (as it should be)
 
 
