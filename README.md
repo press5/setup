@@ -12,7 +12,7 @@ system:
 
 *  disable smart quotes, dashes, capitalization, and periods
 *  disable .DS_Store on USB and network devices
-*  
+*  disable natural scrolling
 
 finder:
 
@@ -26,6 +26,7 @@ finder:
 dock: 
 
 *  enable auto-hide
+*  don't show recent applications 
 *  
 
 ## special thanks
