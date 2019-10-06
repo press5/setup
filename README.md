@@ -5,9 +5,10 @@ i wanted something that i could use on a new system to set it up the way i want 
 
 ### warning: my setup is opinionated (as it should be)
 
+run boostrap.sh on a new box for prerequisites :D
 
 ## macos
-on a new system you can run all these tags together:
+on a new system you probably want to run all these tags together:
 
 `brew` installs homebrew formula/kegs/taps
 
