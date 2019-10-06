@@ -18,6 +18,13 @@ if uname -s | grep -q Darwin; then
 fi 
 
 
+# STILL TODO: 
+# four desktops in mission control
+# allow iTerm.app a11y permission
+# capslock -> ctrl
+# Linux VM setup
+
+
 # TODO: linux 
 
 

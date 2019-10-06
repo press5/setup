@@ -1,9 +1,33 @@
 ---
-- name: disable smartquotes
+- name: System: Disable Smart Quotes 
   tags: defaults
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
+    value: 0
+    state: present
+
+- name: System: Disable Smart Dashes
+  tags: defaults
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    value: 0
+    state: present
+
+- name: System: Disable Auto Capitalization
+  tags: defaults
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticCapitalizationEnabled
+    value: 0
+    state: present
+
+- name: System: Disable Automatic Periods
+  tags: defaults
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticPeriodSubstitutionEnabled
     value: 0
     state: present
 
@@ -87,4 +111,13 @@
     type: bool
     value: false
     state: present
- 
+
+- name: Trackpad - Disable natural scrolling
+  tags: defaults
+  osx_defaults:
+    domain: NSGlobalDomain 
+    key: com.apple.swipescrolldirection 
+    type: bool
+    value: false
+    state: present
+
