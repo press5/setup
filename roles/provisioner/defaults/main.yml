@@ -54,7 +54,6 @@ brew_casks:
   - github
   - hammerspoon
   - insomnia
-  - iterm2
   - itsycal
   - karabiner-elements
   - keepingyouawake
@@ -79,6 +78,10 @@ appstore_apps:
      aid: 1054607607
    
 download_these:
+   iterm2:
+     name: iTerm 2
+     url: https://www.iterm2.com/downloads/stable/latest
+     dest: "{{gen.myhome}}/Downloads/iTerm2.zip"
    trackballworks:
      name: Kensington Trackball Works
      url: https://www.kensington.com/siteassets/software-support/trackballworks-1.5.0.dmg
