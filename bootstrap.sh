@@ -1,8 +1,8 @@
 #!/bin/sh
-
 # this is a simple bootstrap script to set up a new workstation the way i like.
-# 2019jul27 - born. 
 # probably only works for MacOS right now because that's what i currently use. 
+# excuse my comments everywhere, this is a WIP and the comments will probably
+# evolve into something resembling actual documentation in addition to README.md
 
 # os detection of a sort
 if uname -s | grep -q Darwin; then
@@ -14,18 +14,18 @@ if uname -s | grep -q Darwin; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
   brew install ansible
-  # TODO: ansible 
+  # TODO: menu for tags, to run ansible-playbook right here? 
 fi 
+
 
 
 # STILL TODO: 
 # four desktops in mission control
 # allow iTerm.app a11y permission
-# capslock -> ctrl
+# capslock -> ctrl (as it should be) 
 # Linux VM setup
 
 
 # TODO: linux 
-
 
 

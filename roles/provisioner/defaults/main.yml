@@ -70,7 +70,7 @@ brew_casks:
   - wireshark
   - zoomus
 
-brew_taps: []
+brew_taps: [] # i have no taps employedright now, but if i did, they'd go here
 
 appstore_apps:
    helium:
@@ -78,7 +78,7 @@ appstore_apps:
      aid: 1054607607
    
 download_these:
-   iterm2:
+   iterm3:
      name: iTerm 2
      url: https://www.iterm2.com/downloads/stable/latest
      dest: "{{gen.myhome}}/Downloads/iTerm2.zip"

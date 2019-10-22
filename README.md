@@ -1,7 +1,7 @@
 # setup
 WIP: my system setup (documentation in progress)
 
-i wanted something that i could use on a new system to set it up the way i want while staying as simple as possible.
+i wanted something that i could use on a new system to set it up the way i want while staying as simple as possible.  please feel free to clone it and make it your own!
 
 ### warning: my setup is opinionated (as it should be)
 
