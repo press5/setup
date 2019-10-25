@@ -90,6 +90,10 @@ download_these:
      name: Airfoil Satellite
      url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
      dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
+   opera:
+     name: Opera
+     url: https://net.geo.opera.com/opera/stable/mac
+     dest: "{{gen.myhome}}/Downloads/opera.dmg"
    discord:
      name: Discord
      url: https://discordapp.com/api/download?platform=osx
