@@ -26,14 +26,14 @@ provisioner     role to configure new systems
 
 
 
-#### macos defaults
+#### macos defaults which are modified
 
-##### macos defaults which are modified 
+##### macos:
 *  disable smart quotes, dashes, capitalization, and periods
 *  disable .DS_Store on USB and network devices
 *  disable natural scrolling
 
-#### finder:
+##### finder:
 *  all windows start in $HOME
 *  all windows use list view by default
 *  disable confirmation you want to empty the trash
@@ -41,7 +41,7 @@ provisioner     role to configure new systems
 *  enables the path bar
 *  
 
-#### dock: 
+##### dock: 
 *  enable auto-hide
 *  don't show recent applications 
 *  set size to 32px 
