@@ -1,8 +1,9 @@
 ---
 gen:
   myhome: "{{ lookup('env','HOME') }}"
-  
-omz_installer: omz-install.sh
+
+script:
+  omz: omz-install.sh
 
 brew_pkgs:
   - ack

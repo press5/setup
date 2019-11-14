@@ -1,7 +1,12 @@
 ---
- - name: set up omz
-   script: "{{ omz_installer }}"
+ - name: set up oh-my-zsh
+   script: "{{script.omz}}"
    args:
      creates: "{{gen.myhome}}/.oh-my-zsh" 
    tags: omz
-  
+ 
+ - name: set up vim
+   script: "{{script.vim}}" 
+   args:
+     creates: "{{gen.myhome}}/.vim"
+   tags: vim
