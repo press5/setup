@@ -7,27 +7,33 @@ i wanted something that i could use on a new system to set it up the way i want 
 
 run boostrap.sh on a new box for prerequisites :D
 
-## macos
-on a new system you probably want to run all these tags together:
+## tags
 
-`brew` installs homebrew formula/kegs/taps
+```
+provisioner     role to configure new systems
+├── common         NIX/mac scripts
+│   ├── omz          installs ohmyz.sh
+│   ├── vim          set vim configuration
+├── macos          set up a macos system
+│   ├── brew         installs homebrew formulae/kegs/taps
+│   ├── downloads    fetches files from the web
+│   ├── appstore     downloads apps from the mac app store
+│   ├── superduper   will set up jasonrudolph/keyboard
+│   └── defaults     changes OS settings; see below
+├── linux          TODO
+└── win            TODO
+```
 
-`downloads` grabs whatever you need from the web
 
-`appstore` will install appstore apps
 
-`superduper` will set up [jasonrudolph/keyboard](https://github.com/jasonrudolph/keyboard)
+#### macos defaults
 
-tag `defaults` will make the following changes: 
-
-system:
-
+##### macos defaults which are modified 
 *  disable smart quotes, dashes, capitalization, and periods
 *  disable .DS_Store on USB and network devices
 *  disable natural scrolling
 
-finder:
-
+#### finder:
 *  all windows start in $HOME
 *  all windows use list view by default
 *  disable confirmation you want to empty the trash
@@ -35,8 +41,7 @@ finder:
 *  enables the path bar
 *  
 
-dock: 
-
+#### dock: 
 *  enable auto-hide
 *  don't show recent applications 
 *  set size to 32px 
