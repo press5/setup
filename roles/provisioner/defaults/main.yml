@@ -33,6 +33,7 @@ brew_pkgs:
   - neovim
   - nmap
   - prettyping
+  - pv
   - python3
   - rakudo-star
   - screenfetch
