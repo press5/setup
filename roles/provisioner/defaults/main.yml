@@ -4,6 +4,7 @@ gen:
 
 script:
   omz: omz-install.sh
+  vim: vimsetup.sh 
 
 brew_pkgs:
   - ack
