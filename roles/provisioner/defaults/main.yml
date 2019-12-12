@@ -15,6 +15,7 @@ brew_pkgs:
   - expect
   - fd
   - flake8
+  - fossil
   - fzf
   - git
   - gpg
@@ -43,6 +44,7 @@ brew_pkgs:
   - screenfetch
   - telnet
   - tmux
+  - um
   - vim
   - wget
   - yq
