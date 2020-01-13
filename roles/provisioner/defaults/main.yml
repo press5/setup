@@ -37,6 +37,7 @@ brew_pkgs:
   - ncdu
   - neovim
   - nmap
+  - onefetch
   - prettyping
   - pv
   - python3
