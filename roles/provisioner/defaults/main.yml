@@ -78,7 +78,7 @@ brew_casks:
   - wireshark
   - zoomus
 
-brew_taps: [] # i have no taps employedright now, but if i did, they'd go here
+brew_taps: [] # i have no taps yet, but if i did, they'd go here
 
 appstore_apps:
    helium:
