@@ -74,7 +74,7 @@ brew_casks:
   - spotify
   - visual-studio-code
   - vlc
-  - vmware-remote-console
+# - vmware-remote-console # broken FIXME
   - wireshark
   - zoomus
 
