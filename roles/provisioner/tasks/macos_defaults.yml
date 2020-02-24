@@ -4,8 +4,8 @@
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
-    type: string
-    value: 0
+    type: bool
+    value: false
     state: present
 
 - name: System - Disable Smart Dashes
