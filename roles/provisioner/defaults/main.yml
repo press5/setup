@@ -107,6 +107,14 @@ download_these:
      url: https://discordapp.com/api/download?platform=osx
      dest: "{{gen.myhome}}/Downloads/Discord.dmg"
 
+bionic_apt:
+  - build-essential
+  - git      
+  - tmux
+  - vim-nox
+  - zsh
+  - zsh-doc
+
 aliases:
   k: 'kubectl'
   kcset: "kubectl config use-context $1"
