@@ -69,6 +69,7 @@ brew_casks:
   - macdown
   - monitorcontrol
   - muzzle
+  - openinterminal
   - slack
   - spotify
   - visual-studio-code
