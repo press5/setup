@@ -18,6 +18,7 @@ brew_pkgs:
   - fossil
   - fzf
   - git
+  - git-extras
   - gpg
   - htop
   - httpie
