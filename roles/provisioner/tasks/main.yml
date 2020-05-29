@@ -1,8 +1,13 @@
 ---
- - name: do common tasks
-   import_tasks: common.yml
-   tags: common
 
  - name: set up a MacOS system
-   import_tasks: macos.yml
-   tags: macos
+   include_tasks: macos.yml
+   when: ansible_distribution == 'MacOSX'
+
+# - name: do common tasks
+#   include_tasks: common.yml
+#   tags: common
+#
+# - name: set up a MacOS system
+#   import_tasks: macos.yml
+#   tags: macos
