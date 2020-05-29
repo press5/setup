@@ -21,7 +21,7 @@ case $oschka in
   Linux)
     #### FIXME   FIXME   FIXME   FIXME   WORK IN PROGRESS   FIXME   FIXME   FIXME   FIXME ####
     # what breed of penguin are we
-    if ! [ -x "$(command -v lsb_release)" ]; then
+    if [ -x "$(command -v lsb_release)" ]; then
       penguin_type=$(lsb_release -is)
       type_vers=$(lsb_release -cs)
     fi
@@ -34,6 +34,7 @@ case $oschka in
         ;;
       * )
         echo "unsupported for now. :( install ansible."
+	;;
     esac
     # end linux
     ;;
