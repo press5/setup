@@ -57,10 +57,10 @@
   tags: superduper
 
 - name: set up some MacOS defaults
-  include_tasks: macos_defaults.yml
+  import_tasks: macos_defaults.yml
   tags: defaults
 
 - name: set up homedir repo for dotfiles
-  include_tasks: dotfiles.yml
+  import_tasks: dotfiles.yml
   tags: dotfiles
 

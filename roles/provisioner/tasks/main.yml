@@ -1,8 +1,8 @@
 ---
  - name: do common tasks
-   include_tasks: common.yml
+   import_tasks: common.yml
    tags: common
 
  - name: set up a MacOS system
-   include_tasks: macos.yml
+   import_tasks: macos.yml
    tags: macos
