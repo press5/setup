@@ -4,6 +4,8 @@
 # excuse my comments everywhere, this is a WIP and the comments will probably
 # evolve into something resembling actual documentation in addition to README.md
 
+# ansible-playbook provisioner.yml -i inventory 
+
 oschka=$(uname -s)
 
 case $oschka in
