@@ -1,0 +1,133 @@
+---
+gen:
+  myhome: "{{ lookup('env','HOME') }}"
+
+script:
+  omz: omz-install.sh
+  vim: vimsetup.sh 
+
+brew_pkgs:
+  - ack
+  - ansible-lint
+  - bat
+  - ctags
+  - diff-so-fancy
+  - expect
+  - fd
+  - flake8
+  - fossil
+  - fzf
+  - git
+  - git-extras
+  - gpg
+  - htop
+  - httpie
+  - ipcalc
+  - ipmitool
+  - jq
+  - jsonlint
+  - keychain
+  - kubernetes-cli
+  - kubernetes-helm
+  - libusb
+  - lnav
+  - mas  # this is a dependency, be sure to keep it
+  - miller
+  - molecule
+  - mtr
+  - ncdu
+  - neovim
+  - nmap
+  - onefetch
+  - prettyping
+  - pv
+  - python3
+  - rakudo-star
+  - screenfetch
+  - telnet
+  - tmux
+  - um
+  - vim
+  - wget
+  - yq
+  - zsh
+  - zsh-completions
+
+brew_casks: 
+  - 1password 
+  - alfred
+  - bettertouchtool  # TODO: only install on touch bar macs 
+  - cathode
+  - docker
+  - dwarf-fortress
+  - github
+  - hammerspoon
+  - insomnia
+  - itsycal
+  - karabiner-elements
+  - keepingyouawake
+  - keybase
+  - macdown
+  - monitorcontrol
+  - muzzle
+  - openinterminal
+  - slack
+  - spotify
+  - visual-studio-code
+  - vlc
+# - vmware-remote-console # broken FIXME
+  - wireshark
+  - zoomus
+
+brew_taps: [] # i have no taps yet, but if i did, they'd go here
+
+appstore_apps:
+   helium:
+     name: Helium
+     aid: 1054607607
+   
+download_these:
+   iterm3:
+     name: iTerm 2
+     url: https://www.iterm2.com/downloads/stable/latest
+     dest: "{{gen.myhome}}/Downloads/iTerm2.zip"
+   trackballworks:
+     name: Kensington Trackball Works
+     url: https://www.kensington.com/siteassets/software-support/trackballworks-1.5.0.dmg
+     dest: "{{gen.myhome}}/Downloads/trackballworks.dmg"
+   airfoilsatellite:
+     name: Airfoil Satellite
+     url: https://www.rogueamoeba.com/airfoil/mac/download-satellite.php
+     dest: "{{gen.myhome}}/Downloads/airfoil-satellite.zip"
+   opera:
+     name: Opera
+     url: https://net.geo.opera.com/opera/stable/mac
+     dest: "{{gen.myhome}}/Downloads/opera.dmg"
+   discord:
+     name: Discord
+     url: https://discordapp.com/api/download?platform=osx
+     dest: "{{gen.myhome}}/Downloads/Discord.dmg"
+
+bionic_apt:
+  - build-essential
+  - git      
+  - tmux
+  - vim-nox
+  - zsh
+  - zsh-doc
+
+aliases:
+  k: 'kubectl'
+  kcset: "kubectl config use-context $1"
+  kcunset: "kubectl config unset current-context"
+  kcshow: "kubectl config get-contexts"
+  ssh: "/usr/bin/ssh -A"
+  drc: 'docker-compose'
+  
+env:
+  PKG_CONFIG_PATH: "/usr/local/Cellar/libvirt/4.5.0/lib/pkgconfig"
+  
+
+
+# fabulous: 'yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;    ${i}m\n"; sleep .02; done'
+
