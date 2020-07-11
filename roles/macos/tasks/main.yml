@@ -1,0 +1,62 @@
+---
+- name: check if homebrew is already installed
+  tags: brew
+  stat:
+    path: /usr/local/bin/brew
+  register: hb
+
+- name: install homebrew if not exists
+  tags: brew
+  script: install-homebrew.sh
+  when: not hb.stat.exists
+
+- name: update homebrew
+  tags: brew
+  homebrew: 
+    update_homebrew: yes
+
+- name: install homebrew packages (this may take some time) 
+  tags: brew
+  homebrew:
+    name: "{{ brew_pkgs }}"
+    state: present
+
+- name: install homebrew casks (this may take some time)
+  tags: brew
+  homebrew_cask: 
+    name: "{{ brew_casks }}"
+    state: present
+
+# TODO: brew post install scripts:
+# /usr/local/opt/fzf/install
+# add to vimrc: set rtp+=/usr/local/opt/fzf
+ 
+# obviously uncomment this if you have taps. i don't yet.
+#- name: install homebrew taps (this may take some time)
+#  tags: brew
+#  homebrew_tap:
+#    name: "{{ brew_taps }}"
+#    state: present
+
+- name: getting things that can't be installed via brew
+  tags: downloads
+  get_url:
+    url: "{{ item.value.url }}"
+    dest: "{{ item.value.dest }}" 
+  with_dict: "{{ download_these }}"
+
+- name: install appstore apps
+  shell: "mas install {{item.value.aid}}"
+  with_dict: "{{ appstore_apps }}" 
+  tags: appstore
+
+- name: set defaults
+  include_tasks: defaults.yml
+  tags: defaults
+
+- name: grab superduper mode 
+  git:
+    repo: https://github.com/jasonrudolph/keyboard.git
+    dest: "{{gen.myhome}}/.keyboard"
+  tags: superduper
+

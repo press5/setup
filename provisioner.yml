@@ -1,0 +1,15 @@
+---
+
+## workstation.yml - provision a new workstation
+## 20190922 jkl  initial revision
+## 20200529 jkl  insomnia rewrite
+
+
+
+ - hosts: workstation
+   gather_facts: yes
+   roles:
+    - role: macos
+      when: ansible_facts['os_family'] == 'Darwin'
+    - role: linux
+      when: ansible_facts['os_family"] == 'Linux'

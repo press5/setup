@@ -10,18 +10,20 @@ run boostrap.sh on a new box for prerequisites :D
 ## tags
 
 ```
-provisioner     role to configure new systems
-├── common         NIX/mac scripts
-│   ├── omz          installs ohmyz.sh
-│   ├── vim          set vim configuration
-├── macos          set up a macos system
-│   ├── brew         installs homebrew formulae/kegs/taps
-│   ├── downloads    fetches files from the web
-│   ├── appstore     downloads apps from the mac app store
-│   ├── superduper   will set up jasonrudolph/keyboard
-│   └── defaults     changes OS settings; see below
-├── linux          TODO
-└── win            TODO
+common         NIX/mac scripts
+  ├── omz          installs ohmyz.sh
+  └── vim          set vim configuration
+
+
+
+macos          set up a macos system
+  ├── brew         installs homebrew formulae/kegs/taps
+  ├── downloads    fetches files from the web
+  ├── appstore     downloads apps from the mac app store
+  ├── superduper   will set up jasonrudolph/keyboard
+  └── defaults     changes OS settings; see below
+
+linux          TODO
 ```
 
 
