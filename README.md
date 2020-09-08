@@ -14,8 +14,6 @@ common         NIX/mac scripts
   ├── omz          installs ohmyz.sh
   └── vim          set vim configuration
 
-
-
 macos          set up a macos system
   ├── brew         installs homebrew formulae/kegs/taps
   ├── downloads    fetches files from the web
@@ -41,14 +39,71 @@ linux          TODO
 *  disable confirmation you want to empty the trash
 *  disable warning on changed file extension
 *  enables the path bar
-*  
 
 ##### dock: 
 *  enable auto-hide
 *  don't show recent applications 
 *  set size to 32px 
 *  change window animation to scale
-*  
+
+## todo: 
+
+##### general: 
+*  appearance: auto
+*  colors: as desired
+
+##### screen saver:
+*  message, show with clock
+
+##### mission control: 
+*  group windows by application
+
+##### language and region: 
+*  add esperanto
+*  enable 24-hour clock
+
+##### a11y: 
+*  zoom: enable use keyboard shortcuts to zoom 
+*  keyboard preferences:  extended input
+*  audio: flash the screen when alert occurs
+*  captions: prefer cc  
+
+##### security: 
+*  filevault: enable
+*  firewall: enable
+
+##### software update: 
+*  automatic update: enable
+
+##### network: 
+*  as required
+
+##### bluetooth: 
+*  show bluetooth in menu bar: enable
+
+##### sound: 
+*  sound effects: morse
+*  alert volume: as desired
+*  play feedback: enable
+*  show volume in menu: enable
+
+##### keyboard: 
+*  turn keyboard backlight off
+*  modifier keys: capslock is control
+*  text: touch bar typing suggestions: disable
+*  dictation: shortcut: off
+
+##### trackpad: 
+*  gestures: expose: enable
+
+##### displays: 
+*  night shift: enable s&s
+
+##### additions:
+
+* muzzle
+
+
 
 ## special thanks
 A lot of source material was used when putting this together. 
