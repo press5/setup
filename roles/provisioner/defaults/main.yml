@@ -20,6 +20,7 @@ brew_pkgs:
   - git
   - git-extras
   - gpg
+  - grepcidr
   - htop
   - httpie
   - ipcalc
