@@ -40,17 +40,23 @@ brew_pkgs:
   - neovim
   - nmap
   - onefetch
+  - openssl
   - prettyping
   - pv
+  - pyenv
   - python3
   - rakudo-star
+  - readline
   - screenfetch
+  - sqlite3
   - telnet
   - tmux
   - um
   - vim
   - wget
+  - xz
   - yq
+  - zlib
   - zsh
   - zsh-completions
 
