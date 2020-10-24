@@ -44,7 +44,6 @@ brew_pkgs:
   - prettyping
   - pv
   - pyenv
-  - python3
   - rakudo-star
   - readline
   - screenfetch
